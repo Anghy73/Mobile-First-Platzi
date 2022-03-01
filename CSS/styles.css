@@ -1,6 +1,6 @@
 /*
-0. Display
 1. Position
+0. Display
 2. Modelo de caja o Box model
 3. Tipografía
 4. Visuales (border)
@@ -47,4 +47,32 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+}
+
+header img {
+    width: 150px;
+    height: 24px;
+    margin-top: 60px;
+    align-self: center;
+}
+
+.header--title-container {
+    width: 90%;
+    height: 218px;
+    min-width: 288px;
+    max-width: 900px;
+    margin-top: 40px;
+    text-align: center;
+    align-self: center;
 }
