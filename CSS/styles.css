@@ -1,0 +1,50 @@
+/*
+0. Display
+1. Position
+2. Modelo de caja o Box model
+3. Tipografía
+4. Visuales (border)
+5. Otros
+*/
+
+:root {
+    /* --bitcoin-orange: #f7931a;
+    --soft-orange: #ffe9d5;
+    --secondary-blue: #1a9af7;
+    --soft-blue: #e7f5ff;
+    --warm-black: #201e1c;
+    --black: #282623;
+    --grey: #bababa;
+    --off-white: #faf8f7;
+    --just-white: #fff; */
+    /* Nombrar los nombre de variable semánticamente */    
+    --color-primary: #f7931a;
+    --color-primary-soft: #ffe9d5;
+    --color-secondary: #1a9af7;
+    --color-secondary-soft: #e7f5ff;
+    --color-dark-warm: #201e1c;
+    --color-dark: #282623;
+    --color-light-darker: #bababa;
+    --color-background: #faf8f7
+    --color-light
+
+    --font-sans:'DM Sans', sans-serif;
+	--font-inter:'Inter', sans-serif;
+	--size-300:300;
+	--size-400:400;
+	--size-500:500;
+	--size-700:700;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+/* La mejor practica para el box-sizing: border-box. El normal omite los pseudoelements este no, pero para que el selector * no dificulte el uso de CSS, Le agregamos el valor inherit*/
+*, *:before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
