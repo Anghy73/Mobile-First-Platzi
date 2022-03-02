@@ -309,8 +309,10 @@ main {
 }
 
 .product-detail-batata__logo {
-    position: relative;
-    width: 100px;
-    height: 60px;
-    background-color: red;
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    top: -15px;
+    left: calc(50% - 20px);
+    background-image: url("../assets/icons/batata.svg");
 }
