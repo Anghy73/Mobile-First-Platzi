@@ -123,7 +123,7 @@ header img {
     background-image: url('../assets/icons/down-arrow.svg');
 }
 
-/* Main */
+/* Main - Tablas */ 
 
 main {
     width: 100%;
@@ -134,8 +134,7 @@ main {
 .main-exchange-container {
     width: 100%;
     height: auto;
-    padding-top: 80px;
-    padding-bottom: 30px;
+    padding: 80px 0px 30px 0px;
     text-align: center;
     background-color: var(--color-background);
 }
@@ -201,6 +200,8 @@ main {
 .currency__table--container table {
     width: 100%;
     height: 100%;
+    border-radius: 7px;
+    box-shadow: 3px 2px 10px var(--color-dark-warm);
 }
 
 .currency__table--container td {
@@ -276,22 +277,40 @@ main {
     color: var(--color-dark-warm);
 }
 
-.currency__table--container .table-arrow__right {
+/* .currency__table--container .table-arrow__right {
     position: absolute;
     top: 980px;
     right: 20px;
-}
+} */
 
 .commissions__table .commissions__table--title {
     color: var(--color-secondary);
 }
 
-.commissions__table .table-arrow__left {
+/* .commissions__table .table-arrow__left {
     position: absolute;
     top: 1340px;
-    left: 20px;
-}
+    left: -250px;
+} */
 
 .commissions__table .commissions-table--date {
     background-color: rgba(0, 119, 255, 0.199);
+}
+
+/* Main - Beneficios */
+
+.main-product-detail {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--color-dark-warm);
+}
+
+.product-detail-batata__logo {
+    position: relative;
+    width: 100px;
+    height: 60px;
+    background-color: red;
 }
