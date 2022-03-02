@@ -25,8 +25,8 @@
     --color-dark-warm: #201e1c;
     --color-dark: #282623;
     --color-light-darker: #bababa;
-    --color-background: #faf8f7
-    --color-light
+    --color-background: #faf8f7;
+    --color-light: #fff;
 
     --font-sans:'DM Sans', sans-serif;
 	--font-inter:'Inter', sans-serif;
@@ -38,7 +38,7 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'DM Sans', sans-serif;
+    font-family: var(--font-sans);
     box-sizing: border-box;
 }
 
@@ -58,6 +58,7 @@ header {
     min-width: 320px;
     height: 334px;
     text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);;
 }
 
 header img {
@@ -75,4 +76,47 @@ header img {
     margin-top: 40px;
     text-align: center;
     align-self: center;
+}
+
+.header--title-container h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--color-light);
+}
+
+.header--title-container p {
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: var(--size-500);
+    /* modifica la distancia entre la línea base de las palabras */
+    line-height: 1.8rem;
+    color: var(--color-primary-soft);
+}
+
+.header--title-container .header--button {
+    position: absolute;
+    left: calc(50% - 112px);
+    top: 270px;
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--color-background);
+    /* Sombra */
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-dark);
+}
+
+.header--button span {
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url('../assets/icons/down-arrow.svg');
 }
