@@ -444,7 +444,7 @@ main {
     color: var(--color-dark);
 }
 
-.plans--title p {
+.plan__p {
     padding-top: 30px;
     font-size: 1.4rem;
     font-weight: 500;
@@ -452,15 +452,118 @@ main {
     color: #757575;
 }
 
+/* Scroll Horizontal */
+
+.plans-container--slider {
+    display: flex;
+    gap: 50px;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+/* Scroll */
+
 .plans-container--card {
     position: relative;
+    scroll-snap-align: center;
     width: 70%;
     min-width: calc(320 * .70px);
     max-width: 300px;
     height: 250px;
-    margin: 50px auto 0;
+    margin: 50px 20px 0;
     padding: 0 15px;
     background-color: var(--color-light);
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+.plans-container--card .recomendado {
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    top: -15px;
+    left: calc(50% - 60px);
+    padding: 6px;
+    background-color: var(--color-primary);
+    border-radius: 8px;
+    color: var(--color-light);
+    font-size: 1.4rem;
+}
+
+.plan-info-container h3 {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: black;
+}
+
+.plan-card--price {
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.plan-card--price sup {
+    font-size: 1.2rem;
+    font-weight: 300;
+    /* verticalmente */
+    vertical-align: 30px;
+    /* horizontalmente */
+    /* text-align: center; */
+}
+
+.plan-info-container p:nth-child(3) {
+    font-size: 1.2rem;
+    color: #757575;
+}
+
+.plan-card--call {
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: var(--color-background);
+    border: 2px solid var(--color-primary);
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: bold;
+    border-radius: 4px;
+    color: var(--color-dark-warm);
+    font-family: "DM Sans", sans-serif;
+    cursor: pointer;
+}
+
+.plan-card--call span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../assets/icons/orange-right-arrow.svg');
+    vertical-align: text-bottom;
+}
+
+.card-basic .recomendado {
+    background-color: #1a9af7;
+}
+
+.card-limit .recomendado {
+    background-color: #5d5d5d;
+}
+
+.card-limit {
+    background-color: var(--color-dark-warm);
+}
+
+.card-limit .plan-info-container h3 {
+    color: var(--color-light);
+}
+
+.card-limit .plan-card--price {
+    color: var(--color-light);
+}
+
+.card-limit .plan-card--call {
+    background-color: var(--color-dark);
+    color: var(--color-light);
 }
